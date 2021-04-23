@@ -7,12 +7,12 @@ _e() get and print
 __() get
 
 -->
-	<meta http-equiv="Content-Type" content="text/html; charset=<? echo get_bloginfo('charset'); ?>" />
-	<title><? bloginfo('name'); ?></title>
-	<meta name="description" content="<? bloginfo('description'); ?>" />
+	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo get_bloginfo('charset'); ?>" />
+	<title><?php bloginfo('name'); ?></title>
+	<meta name="description" content="<?php bloginfo('description'); ?>" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/style.css'?>" type="text/css" />
-
-	<? wp_head(); ?>
+	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery-3.6.0.min.js"></script>
+	<?php wp_head(); ?>
 </head>
 <body>
 <div class="c">
