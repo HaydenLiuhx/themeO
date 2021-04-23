@@ -1,0 +1,32 @@
+/* 
+Theme Name: themeO 
+Theme URI: https://liuhuangxun.com/
+Description: Hayden's theme
+Version: 1.0
+Author: Hayden Liu
+Author URI: https://liuhuangxun.com/
+Tags: Double column
+*/ 
+#header {
+  background: #90a090;
+  border-bottom: double 3px #aba;
+  border-left: solid 1px #9a9;
+  border-right: solid 1px #565;
+  border-top: solid 1px #9a9;
+  margin: 0;
+  padding:60px;
+}
+
+#header {
+  background: url("images/headerbg.png") ;
+}
+
+#content{
+  background: #FEFEFE;
+  border-bottom: double 3px #aba;
+  border-left: solid 1px #9a9;
+  border-right: solid 1px #565;
+  border-top: solid 1px #9a9;
+  margin-top:10px;
+  padding:60px;
+}
