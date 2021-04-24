@@ -15,6 +15,8 @@
 		<h2>Functions</h2>
 		<ul>
 		<?php wp_register(); ?>
+
+
 		<?php wp_loginout(); ?>
 		</ul>
 	</div>
