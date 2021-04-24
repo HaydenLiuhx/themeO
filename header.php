@@ -12,6 +12,10 @@ __() get
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri().'/style.css'?>" type="text/css" />
 	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery-3.6.0.min.js"></script>
+	<?php if( is_page('contact') ){ ?>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/verif.js"></script>
+<?php }?>
 	<?php wp_head(); ?>
 </head>
 <body>

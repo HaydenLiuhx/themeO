@@ -15,10 +15,13 @@
 		<h2>Functions</h2>
 		<ul>
 		<?php wp_register(); ?>
-
-
+		<li class="cat-item">
+		<a href="http://localhost:8888/dev.vivo.digital/contect-us/">Contact Us</a>
+	</li>
+	<li class="cat-item">
 		<?php wp_loginout(); ?>
-		</ul>
+		</li>
+	</ul>
 	</div>
 	<?php } ?>
 </div>
