@@ -35,15 +35,15 @@ if(isset($_POST['submitted'])) {
 	}
 
 	if(!isset($hasError)) {
-		$emailTo = get_option('tz_email');
+		$emailTo = get_option('admin_email');
 		if (!isset($emailTo) || ($emailTo == '') ){
-			$emailTo = get_option('admin_email');
+			$emailTo = $_POST['toemail'];
 		}
 		$subject = '[PHP Snippets] From '.$name;
 		$body = "Name: $name \n\nEmail: $email \n\nComments: $comments";
 		$headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
-		wp_mail($emailTo, $subject, $body, $headers);
+		mail($emailTo, $subject, $body, $headers);
 		$emailSent = true;
 	}
 
@@ -51,7 +51,7 @@ if(isset($_POST['submitted'])) {
 <?php get_header(); ?>
 <div class="c">
 	<div id="left-box">
-
+	
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -91,6 +91,20 @@ if(isset($_POST['submitted'])) {
 									<span class="error"><?=$commentError;?></span>
 								<?php } ?>
 							</li>
+
+							<li style="margin:10px 0px;display: flex;">
+								<label for="toemail">To:</label>
+								<select name="toemail" size="1">
+									<option value="huangxunliu@gmail.com">Number 1</option>
+									<option value="huangxunliu@gmail.com">No.2</option>
+									<option value="hayden.liuhx@gmail.com">No.3</option>
+									
+								</select>
+							</li>
+
+
+
+
 
 							<li style="margin:10px 0px;display: flex;">
 								<input type="submit">Send email</input>
