@@ -19,7 +19,7 @@ Tags: Double column
 }
 
 #header {
-  background: url("images/headerbg.png");
+  background: url("images/headerbg2.jpg");
 }
 
 /* #content {
@@ -204,7 +204,7 @@ h3 {
   text-decoration: none;
 }
 .nav li a {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgb(206, 162, 162);
   color: #333;
   float: left;
   line-height: 31px;
@@ -227,14 +227,14 @@ h3 {
   background-color: rgba(10,27,42,.8);
 }
 
-h2 {
-  color: #c2b8a4;
-  margin-top: 10px;
-  margin-bottom: 14px;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.3em;
-    margin: 20px 0 30px;
+h1 {
+  color:black !important;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+h4 {
+  color:#c3512f
 }
 
 form input, form textarea {
@@ -254,4 +254,37 @@ form button[type=submit] {
   background-color: #c2b8a4;
   color: #0a1b2a;
   top: -1px;
+}
+
+.nav li.current-menu-item a {
+  border-color: #c3512f;
+  color:#c3512f;
+  text-decoration: none;
+}
+
+.nav li a:hover, .nav li.current-menu-item a {
+  border-color: #c3512f;
+  color: #c3512f;
+  text-decoration: none;
+}
+
+a {
+  color: #c3512f;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.post-item h2 a {
+  color: #c3512f;
+  text-decoration: none;
+}
+
+.sbox h2 {
+  border-left: 4px solid #c3512f;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 15px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }

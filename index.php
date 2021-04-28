@@ -52,8 +52,8 @@ get_header();
 						</div>
 						<div class="post-meta">
 							<!-- if we need translate to another language, we should add a class and use poedit(lanageage package) -->
-							<?php _e('category'); ?>：<?php the_category(','); ?><span>|</span>
-							<?php _e('author'); ?>：<?php the_author(); ?><span>|</span>
+							<?php _e('category'); ?>：<?php the_category(','); ?><span> / </span>
+							<?php _e('author'); ?>：<?php the_author(); ?><span> / </span>
 							<?php echo __('time'); ?>：<?php the_time('Y-m-d'); ?>
 							<?php edit_post_link(__('Edit'), ' <span>|</span> ', ''); ?>
 						</div>

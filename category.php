@@ -35,6 +35,12 @@
 						</a>
 					</h2>
 							</div>
+							<div class="post-meta">
+								<?php _e( 'category'); ?>：<?php the_category(','); ?><span> / </span>
+								<?php _e( 'author'); ?>：<?php the_author(); ?><span> / </span>
+								<?php echo __( 'time'); ?>：<?php the_time( 'Y-m-d' ); ?>
+								<?php edit_post_link( __( 'Edit',), ' <span> / </span> ', '' ); ?>
+							</div>
 							<div class="post-content">
 							<?php the_content(); ?>
 								<?php if(get_field('staff_role')):?>
@@ -51,12 +57,7 @@
 									
 									<?php endif; ?>
 						</div>
-							<div class="post-meta">
-								<?php _e( 'category'); ?>：<?php the_category(','); ?><span>|</span>
-								<?php _e( 'author'); ?>：<?php the_author(); ?><span>|</span>
-								<?php echo __( 'time'); ?>：<?php the_time( 'Y-m-d' ); ?>
-								<?php edit_post_link( __( 'Edit',), ' <span>|</span> ', '' ); ?>
-							</div>
+							
 						</div>
 						<?php
 					}

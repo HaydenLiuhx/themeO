@@ -54,20 +54,8 @@ if(isset($_POST['submitted'])) {
 	<div id="left-box">
 
 	<div class="box-signup">
-              <h2>Stay in touch</h2>
-              <p style="color: #fff;margin-bottom: 18px;min-height: 42px;font-size:16px;">
-                Sign up to receive our latest updates and we'll reward you with 10% off all business with us.              </p>
-              <div class="signup-form">
-    <form action="//vivodigital.us8.list-manage.com/subscribe/post-json?u=a0a970266516e9ecdbc44175b&amp;id=314563cc82" method="post" id="signup-form" class="signup-form__form" name="signup-form">
-        <input type="text" name="FNAME" id="name" class="form__input" placeholder="Your name" required=""> 
-        <input type="email" name="EMAIL" id="email" class="form__input" placeholder="Your email" required=""> 
-        <button type="submit" class="form__submit btn">Subscribe</button>
-        <div class="form__message"></div>
-    </form>
-</div>
- </div>
-	
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 					<div class="entry-content">
@@ -81,8 +69,17 @@ if(isset($_POST['submitted'])) {
 								<p class="error">Sorry, an error occured.<p>
 							<?php } ?>
 
-						<form action="<?php the_permalink(); ?>" id="contactForm" method="post">
-							<ul class="contactform">
+	
+
+              <p style="color: #fff;margin-bottom: 18px;min-height: 42px;font-size:16px;">
+                Sign up to receive our latest updates and we'll reward you with 10% off all business with us.              </p>
+              <div class="signup-form">
+
+			  
+			  <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
+
+
+			  <ul class="contactform">
 							<li style="margin:10px 0px;display: flex;">
 								<label for="contactName">Name:</label>
 								<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="required requiredField" />
@@ -127,6 +124,12 @@ if(isset($_POST['submitted'])) {
 						</ul>
 						<input type="hidden" name="submitted" id="submitted" value="true" />
 					</form>
+
+        <!-- <button type="submit" class="form__submit btn">Subscribe</button> -->
+        
+    </form>
+</div>
+ </div>				
 				<?php } ?>
 				</div><!-- .entry-content -->
 			</div><!-- .post -->

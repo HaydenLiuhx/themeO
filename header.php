@@ -31,7 +31,7 @@ __() get
 
 						<?php if( get_header_image() != '' ) : ?>
 
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img style="max-width: 78px;background-size: auto;height: 100%;" src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img style="max-width: 90px;background-size: auto;height: 100%;" src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
 
 
 						<?php endif; // header image was removed ?>
@@ -47,12 +47,12 @@ __() get
 
 		<div style="margin-top: 10px;" >
 		<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
+			<div class="description" style="color: black"><?php bloginfo('description'); ?></div>
 			<?php
 				$view = get_option('view');
 				update_option( 'view' , $view + 1 );
 			?>
-			<p>Visit Traffic：<?php echo $view; ?> </p>
+			<p style="color: black">Visit Traffic：<?php echo $view; ?> </p>
 			</div>
 		<div class="nav" class="col-md-4 pull-right">
 		<ul>
