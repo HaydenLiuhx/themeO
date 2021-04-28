@@ -3,9 +3,10 @@ get_header();
 // $servicetitle = get_field('service_title');
 
 ?>
-<div class="c">
+<div id="content" class="site-content container">
+<div id="primary" class="content-area col-sm-12 col-md-10">
 	<div id="left-box">
-		<div id="home-loop">
+	<div id="home-loop">
 			<?php
 			if (have_posts()) {
 				while (have_posts()) {
@@ -68,8 +69,13 @@ get_header();
 		<div class="posts_nav_link">
 			<?php posts_nav_link(); ?>
 		</div>
+		
 	</div>
-	<?php get_sidebar(); ?>
+	
 
 </div>
+
+<?php get_sidebar(); ?>
+</div>
+		
 <?php get_footer(); ?>

@@ -1,11 +1,15 @@
 <?php get_header(); ?>
-<div class="c">
+
+	
+
+	<div id="content" class="site-content container">
+<div id="primary" class="content-area col-sm-12 col-md-8">
 	<!-- get the current class titles -->
-	<div class="cat-title">
+	<div class="row justify-content-center">
+	<div class="cat-title col-sm-10 col-md-8">
 		<h1 style="text-align:center;color: #2280da;">(<?php single_cat_title(); ?>) Classisfied Posts：</h1>
 	</div>
 </div>
-<div class="c">
 	<div id="left-box">
 		<div id="home-loop">
 			<?php
@@ -65,6 +69,8 @@
 			<?php posts_nav_link(); ?>
 		</div>
 	</div>
+	</div>
 	<?php get_sidebar(); ?>
 </div>
+
 <?php get_footer(); ?>

@@ -1,5 +1,6 @@
 
-<div id="right-box">
+<div id="secondary" class="widget-area col-sm-12 col-md-2" role="complementary">
+	<div style="margin-top: 10px;position:fixed;">
 	<!-- use the tool -->
 	<!-- whether it has a sidebar -->
 	<?php if( is_dynamic_sidebar() ){ dynamic_sidebar(); }else{ ?>
@@ -16,7 +17,7 @@
 		<ul>
 		<?php wp_register(); ?>
 		<li class="cat-item">
-		<a href="https://dev.vivo.digital/contect-us/">Contact Us</a>
+		<a href="http://localhost:8888/contect-us/">Contact Us</a>
 	</li>
 	<li class="cat-item">
 		<?php wp_loginout(); ?>
@@ -24,4 +25,5 @@
 	</ul>
 	</div>
 	<?php } ?>
+	</div>
 </div>

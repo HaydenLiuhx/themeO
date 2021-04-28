@@ -1,5 +1,12 @@
 <?php get_header(); ?>
-<div class="c">
+<div id="content" class="site-content container">
+<div id="primary" class="content-area col-sm-12 col-md-8">
+	<!-- get the current class titles -->
+	<div class="row justify-content-center">
+	<div class="cat-title col-sm-10 col-md-8">
+		<h1 style="text-align:center;color: #2280da;"><?php the_title(); ?></h1>
+	</div>
+</div>
 	<div id="left-box">
 		<div id="post-box">
 			<?php
@@ -65,6 +72,7 @@
 			</div>
 		</div>
 	</div>
+				</div>
 	<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
